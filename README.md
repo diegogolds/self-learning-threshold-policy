@@ -2,6 +2,7 @@
 
 FIGURES 3-4
 
+The data used to create the plots contained in these fiugures was generated using the file 'staticlambda.m', with the parameters indicated in the paper.
 
 FIGURE 5
 
