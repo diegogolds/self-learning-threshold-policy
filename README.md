@@ -18,3 +18,7 @@ The histogram was created using the file 'resourceshare.m' and data obtained thr
 \sum_{j = 1}^J 1_{task j is in a server pool with x tasks at time t} = n x (q_n(t, x) - q_n(t, x + 1)).
 
 Here J is the total number of tasks that arrived to the system during the simulation, n is the number of server pools and q_n is the occupancy state as defined in the paper.
+
+FIGURE 6
+
+The data used to create this figure was generated using the file 'dynamiclambda.m', with the parameters indicated in the paper.
