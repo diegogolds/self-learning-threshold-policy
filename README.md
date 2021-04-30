@@ -1,8 +1,10 @@
 # self-learning-threshold-policy
 
+Here we indicate how to generate the data presented in the paper "Self-Learning Threshold-Based Load-Balancing" (by Diego Goldsztajn, Sem C. Borst, Johan S.H. van Leeuwaarden, Debankur Mukherjee and Philip Whiting) using MATLAB R2019a.
+
 FIGURES 3-4
 
-The data used to create the plots contained in these fiugures was generated using the file 'staticlambda.m', with the parameters indicated in the paper.
+The data used to create the plots contained in these fiugures was generated using the file 'staticlambda.m' with the parameters indicated in the paper.
 
 FIGURE 5
 
@@ -21,4 +23,4 @@ Here J is the total number of tasks that arrived to the system during the simula
 
 FIGURE 6
 
-The data used to create this figure was generated using the file 'dynamiclambda.m', with the parameters indicated in the paper.
+The data used to create this figure was generated using the file 'dynamiclambda.m' with the parameters indicated in the paper.
