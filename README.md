@@ -9,7 +9,7 @@ The data used to create the histogram was generated using the following files.
 - 'random.m' for the Random policy.
 - 'powerof2.m' for the Power-of-2 policy.
 
-For each of these policies, column 1 / x of the histogram corresponds to the time and ensemble average of
+The histogram was created using the file 'resourceshare.m' and data obtained through several executions of the above files. For each of the policies, column 1 / x of the histogram corresponds to the time and ensemble average of
 
 \sum_{j = 1}^J 1_{task j is in a server pool with x tasks at time t} = n x (q_n(t, x) - q_n(t, x + 1)).
 
