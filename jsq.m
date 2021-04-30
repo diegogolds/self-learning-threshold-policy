@@ -7,7 +7,6 @@ N = 500; %number of server pools.
 i = 1;
 t = 0;
 discarded = 0; %number of discarded tasks (should remain equal to zero).
-arrivals = 0; %number of arrivals.
 %Initial condition:
 state = zeros(1, B); %occupancy state of the system.
 for k = 1 : floor(lambda)
@@ -34,7 +33,6 @@ while t + dt < tf
     t = t + dt;
     %Arrival:
     if event == 1
-        arrivals = arrivals + 1;
         [m, k] = min(queues);
         if m < B
             tasks = add(tasks, k(1));
@@ -70,12 +68,3 @@ D = D(1 : i);
 Q = Q(1 : i, :);
 S = S(1 : i, :);
 save('jsq');
-%Check arrivals:
-disp(arrivals / (N * t));
-
-%System state across time:
-figure('Name', 'Normalized system state across time', 'NumberTitle', 'off');
-plot(T, S(:, floor(lambda)) / N, T, S(:, floor(lambda) + 1) / N, T, S(:, floor(lambda) + 2) / N);
-title('System state');
-xlabel('t');
-legend('q_{[\lambda]}', 'q_{[\lambda] + 1}', 'q_{[\lambda] + 2}');
