@@ -1,5 +1,8 @@
 # self-learning-threshold-policy
 
+FIGURES 3-4
+
+
 FIGURE 5
 
 The data used to create the histogram was generated using the following files.
