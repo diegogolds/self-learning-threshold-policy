@@ -1,6 +1,7 @@
 # self-learning-threshold-policy
 
 FIGURE 5
+
 The histogram was generated using the file 'throughput.m' and data sets generated for each of the four policies represented in the histogram. Specifically:
 
 - the data sets for the Threshold policy were generated using the file 'threshold.m',
