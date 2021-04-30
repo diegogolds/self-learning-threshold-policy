@@ -1,1 +1,1 @@
-# self-learning_threshold-based_load_balancing
+# self-learning-threshold-policy
