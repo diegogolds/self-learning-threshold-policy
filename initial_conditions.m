@@ -1,6 +1,12 @@
 %This function generates vectors 'queues', 'tasks', 'green' and 'yellow'
 %corresponding to the initial occupancy state 'state' of a system with N
-%server pools, server pool size B and threshold l.
+%server pools, server pool size B and threshold l. The vector 'queues'
+%indicates the number of tasks at each server pools. The vector tasks
+%contains a list of server pool IDs such that each server pool is
+%listed a number of times equal to the number of tasks it has. The
+%vector 'green' contains a list of the server pools with a green token
+%at the dispatcher. The vector 'yellow' contains a list of the server
+%pools with a yellow token at the dispatcher.
 function [queues, tasks, green, yellow] = initial_conditions(N, B, l, state)
     %Queues:
     queues = zeros(1, N);
